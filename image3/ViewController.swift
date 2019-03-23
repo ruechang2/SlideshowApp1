@@ -61,13 +61,55 @@ class ViewController: UIViewController {
         
 
 
-
+    @IBAction func button(_ sender: Any) {
+        if self.timer != nil {
+            if self.timer != nil {
+                self.timer!.invalidate()   // タイマーを停止する
+    }
+        }
+    }
+    
     
 
-
-
+    @IBAction func forward(_ sender: Any) {
+        func displayImage() {
+            
+            // 画像の名前の配列
+            let imageNameArray = [
+                "スクリーンショット 2019-01-29 20.56.50",
+                "スクリーンショット 2019-01-29 20.57.15",
+                "スクリーンショット 2019-01-29 21.01.51",
+                
+                ]
+            
+            // 画像の番号が正常な範囲を指しているかチェック
+            
+            // 範囲より下を指している場合、最後の画像を表示
+            if dispImageNo < 0 {
+                dispImageNo = 2
+            }
+            
+            // 範囲より上を指している場合、最初の画像を表示
+            if dispImageNo > 2 {
+                dispImageNo = 0
+            }
+            
+            // 表示している画像の番号から名前を取り出し
+            let name = imageNameArray[dispImageNo]
+            
+            // 画像を読み込み
+            let image = UIImage(named: name)
+            
+            // Image Viewに読み込んだ画像をセット
+            imageView.image = image
+        }
+        
+    }
     
 
+    
+    @IBOutlet weak var play1: UIButton!
+    
     @IBOutlet weak var forward: UIButton!
     
     @IBOutlet weak var back: UIButton!
@@ -77,6 +119,8 @@ class ViewController: UIViewController {
             timer = Timer.scheduledTimer(timeInterval: 2.0, target: self, selector: #selector(updateTimer(_:)), userInfo: nil, repeats: true)
             forward.isEnabled = false
             back.isEnabled = false
+            play1.setTitle("停止", for: .normal) // ボタンのタイトル
+            play1.setTitleColor(UIColor.red, for: .normal) // タイトルの色
         }else{
             
             
@@ -85,6 +129,8 @@ class ViewController: UIViewController {
                     self.timer!.invalidate()   // タイマーを停止する
                     forward.isEnabled = true
                     back.isEnabled = true
+                    play1.setTitle("再生", for: .normal) // ボタンのタイトル
+                    play1.setTitleColor(UIColor.red, for: .normal) // タイトルの色
                     self.timer = nil          // startTimer() の timer == nil で判断するために、 timer = nil としておく
                 }
             }

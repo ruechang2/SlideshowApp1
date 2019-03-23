@@ -42,17 +42,17 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		CE1123A1223FAE5500FBD68C /* image3.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = image3.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CE1123A1223FAE5500FBD68C /* SlideshowApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SlideshowApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE1123A4223FAE5500FBD68C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CE1123A6223FAE5500FBD68C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		CE1123A9223FAE5500FBD68C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		CE1123AB223FAE6100FBD68C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CE1123AE223FAE6100FBD68C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CE1123B0223FAE6200FBD68C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		CE1123B5223FAE6200FBD68C /* image3Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = image3Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CE1123B5223FAE6200FBD68C /* SlideshowAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SlideshowAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE1123B9223FAE6200FBD68C /* image3Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = image3Tests.swift; sourceTree = "<group>"; };
 		CE1123BB223FAE6200FBD68C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		CE1123C0223FAE6200FBD68C /* image3UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = image3UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CE1123C0223FAE6200FBD68C /* SlideshowAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SlideshowAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE1123C4223FAE6200FBD68C /* image3UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = image3UITests.swift; sourceTree = "<group>"; };
 		CE1123C6223FAE6200FBD68C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CE1123D4223FC0DF00FBD68C /* clickviewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = clickviewViewController.swift; sourceTree = "<group>"; };
@@ -111,9 +111,9 @@
 		CE1123A2223FAE5500FBD68C /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				CE1123A1223FAE5500FBD68C /* image3.app */,
-				CE1123B5223FAE6200FBD68C /* image3Tests.xctest */,
-				CE1123C0223FAE6200FBD68C /* image3UITests.xctest */,
+				CE1123A1223FAE5500FBD68C /* SlideshowApp.app */,
+				CE1123B5223FAE6200FBD68C /* SlideshowAppTests.xctest */,
+				CE1123C0223FAE6200FBD68C /* SlideshowAppUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -152,9 +152,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		CE1123A0223FAE5500FBD68C /* image3 */ = {
+		CE1123A0223FAE5500FBD68C /* SlideshowApp */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = CE1123C9223FAE6200FBD68C /* Build configuration list for PBXNativeTarget "image3" */;
+			buildConfigurationList = CE1123C9223FAE6200FBD68C /* Build configuration list for PBXNativeTarget "SlideshowApp" */;
 			buildPhases = (
 				CE11239D223FAE5500FBD68C /* Sources */,
 				CE11239E223FAE5500FBD68C /* Frameworks */,
@@ -164,14 +164,14 @@
 			);
 			dependencies = (
 			);
-			name = image3;
+			name = SlideshowApp;
 			productName = image3;
-			productReference = CE1123A1223FAE5500FBD68C /* image3.app */;
+			productReference = CE1123A1223FAE5500FBD68C /* SlideshowApp.app */;
 			productType = "com.apple.product-type.application";
 		};
-		CE1123B4223FAE6200FBD68C /* image3Tests */ = {
+		CE1123B4223FAE6200FBD68C /* SlideshowAppTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = CE1123CC223FAE6200FBD68C /* Build configuration list for PBXNativeTarget "image3Tests" */;
+			buildConfigurationList = CE1123CC223FAE6200FBD68C /* Build configuration list for PBXNativeTarget "SlideshowAppTests" */;
 			buildPhases = (
 				CE1123B1223FAE6200FBD68C /* Sources */,
 				CE1123B2223FAE6200FBD68C /* Frameworks */,
@@ -182,14 +182,14 @@
 			dependencies = (
 				CE1123B7223FAE6200FBD68C /* PBXTargetDependency */,
 			);
-			name = image3Tests;
+			name = SlideshowAppTests;
 			productName = image3Tests;
-			productReference = CE1123B5223FAE6200FBD68C /* image3Tests.xctest */;
+			productReference = CE1123B5223FAE6200FBD68C /* SlideshowAppTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		CE1123BF223FAE6200FBD68C /* image3UITests */ = {
+		CE1123BF223FAE6200FBD68C /* SlideshowAppUITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = CE1123CF223FAE6200FBD68C /* Build configuration list for PBXNativeTarget "image3UITests" */;
+			buildConfigurationList = CE1123CF223FAE6200FBD68C /* Build configuration list for PBXNativeTarget "SlideshowAppUITests" */;
 			buildPhases = (
 				CE1123BC223FAE6200FBD68C /* Sources */,
 				CE1123BD223FAE6200FBD68C /* Frameworks */,
@@ -200,9 +200,9 @@
 			dependencies = (
 				CE1123C2223FAE6200FBD68C /* PBXTargetDependency */,
 			);
-			name = image3UITests;
+			name = SlideshowAppUITests;
 			productName = image3UITests;
-			productReference = CE1123C0223FAE6200FBD68C /* image3UITests.xctest */;
+			productReference = CE1123C0223FAE6200FBD68C /* SlideshowAppUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
@@ -228,7 +228,7 @@
 					};
 				};
 			};
-			buildConfigurationList = CE11239C223FAE5500FBD68C /* Build configuration list for PBXProject "image3" */;
+			buildConfigurationList = CE11239C223FAE5500FBD68C /* Build configuration list for PBXProject "SlideshowApp" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -241,9 +241,9 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				CE1123A0223FAE5500FBD68C /* image3 */,
-				CE1123B4223FAE6200FBD68C /* image3Tests */,
-				CE1123BF223FAE6200FBD68C /* image3UITests */,
+				CE1123A0223FAE5500FBD68C /* SlideshowApp */,
+				CE1123B4223FAE6200FBD68C /* SlideshowAppTests */,
+				CE1123BF223FAE6200FBD68C /* SlideshowAppUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -314,12 +314,12 @@
 /* Begin PBXTargetDependency section */
 		CE1123B7223FAE6200FBD68C /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = CE1123A0223FAE5500FBD68C /* image3 */;
+			target = CE1123A0223FAE5500FBD68C /* SlideshowApp */;
 			targetProxy = CE1123B6223FAE6200FBD68C /* PBXContainerItemProxy */;
 		};
 		CE1123C2223FAE6200FBD68C /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = CE1123A0223FAE5500FBD68C /* image3 */;
+			target = CE1123A0223FAE5500FBD68C /* SlideshowApp */;
 			targetProxy = CE1123C1223FAE6200FBD68C /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -513,7 +513,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/image3.app/image3";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SlideshowApp.app/SlideshowApp";
 			};
 			name = Debug;
 		};
@@ -534,7 +534,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/image3.app/image3";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SlideshowApp.app/SlideshowApp";
 			};
 			name = Release;
 		};
@@ -581,7 +581,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		CE11239C223FAE5500FBD68C /* Build configuration list for PBXProject "image3" */ = {
+		CE11239C223FAE5500FBD68C /* Build configuration list for PBXProject "SlideshowApp" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				CE1123C7223FAE6200FBD68C /* Debug */,
@@ -590,7 +590,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		CE1123C9223FAE6200FBD68C /* Build configuration list for PBXNativeTarget "image3" */ = {
+		CE1123C9223FAE6200FBD68C /* Build configuration list for PBXNativeTarget "SlideshowApp" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				CE1123CA223FAE6200FBD68C /* Debug */,
@@ -599,7 +599,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		CE1123CC223FAE6200FBD68C /* Build configuration list for PBXNativeTarget "image3Tests" */ = {
+		CE1123CC223FAE6200FBD68C /* Build configuration list for PBXNativeTarget "SlideshowAppTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				CE1123CD223FAE6200FBD68C /* Debug */,
@@ -608,7 +608,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		CE1123CF223FAE6200FBD68C /* Build configuration list for PBXNativeTarget "image3UITests" */ = {
+		CE1123CF223FAE6200FBD68C /* Build configuration list for PBXNativeTarget "SlideshowAppUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				CE1123D0223FAE6200FBD68C /* Debug */,

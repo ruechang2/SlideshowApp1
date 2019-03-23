@@ -63,6 +63,7 @@ class ViewController2: UIViewController {
     
     
     
+    @IBOutlet weak var play2: UIButton!
     
     @IBOutlet weak var forward2: UIButton!
     
@@ -76,6 +77,8 @@ class ViewController2: UIViewController {
             timer = Timer.scheduledTimer(timeInterval: 2.0, target: self, selector: #selector(updateTimer(_:)), userInfo: nil, repeats: true)
             forward2.isEnabled=false
             back2.isEnabled=false
+            play2.setTitle("停止", for: .normal) // ボタンのタイトル
+            play2.setTitleColor(UIColor.red, for: .normal) // タイトルの色
         }else{
             
             
@@ -84,6 +87,8 @@ class ViewController2: UIViewController {
                     self.timer!.invalidate()   // タイマーを停止する
                     forward2.isEnabled=true
                     back2.isEnabled=true
+                    play2.setTitle("再生", for: .normal) // ボタンのタイトル
+                    play2.setTitleColor(UIColor.red, for: .normal) // タイトルの色
                     self.timer = nil          // startTimer() の timer == nil で判断するために、 timer = nil としておく
                 }
             }
