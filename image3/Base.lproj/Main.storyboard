@@ -53,6 +53,9 @@
                                         <rect key="frame" x="210" y="0.0" width="66" height="35"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                         <state key="normal" title="再生/停止"/>
+                                        <connections>
+                                            <action selector="play1:" destination="BYZ-38-t0r" eventType="touchUpInside" id="pPo-c4-Cw5"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <constraints>
