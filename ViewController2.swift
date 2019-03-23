@@ -64,7 +64,9 @@ class ViewController2: UIViewController {
     
     
     
+    @IBOutlet weak var forward2: UIButton!
     
+    @IBOutlet weak var back2: UIButton!
     
     
     @IBAction func play2(_ sender: UIButton) {
@@ -72,12 +74,16 @@ class ViewController2: UIViewController {
     // タイマーを設定
         if self.timer == nil {
             timer = Timer.scheduledTimer(timeInterval: 2.0, target: self, selector: #selector(updateTimer(_:)), userInfo: nil, repeats: true)
+            forward2.isEnabled=false
+            back2.isEnabled=false
         }else{
             
             
             if self.timer != nil {
                 if self.timer != nil {
                     self.timer!.invalidate()   // タイマーを停止する
+                    forward2.isEnabled=true
+                    back2.isEnabled=true
                     self.timer = nil          // startTimer() の timer == nil で判断するために、 timer = nil としておく
                 }
             }
