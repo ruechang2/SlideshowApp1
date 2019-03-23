@@ -38,10 +38,11 @@
                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="39" translatesAutoresizingMaskIntoConstraints="NO" id="7ek-fA-Aol">
                                 <rect key="frame" x="49.5" y="538" width="276" height="35"/>
                                 <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="249" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CdK-xf-FbU">
+                                    <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="249" restorationIdentifier="forward" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CdK-xf-FbU">
                                         <rect key="frame" x="0.0" y="0.0" width="66" height="35"/>
                                         <state key="normal" title="進む"/>
                                         <connections>
+                                            <action selector="forward:" destination="BYZ-38-t0r" eventType="touchUpInside" id="o80-EC-GuJ"/>
                                             <segue destination="Ci8-8u-6yo" kind="show" id="x79-Zh-QIg"/>
                                         </connections>
                                     </button>
@@ -78,6 +79,8 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
+                        <outlet property="back" destination="0ua-Tl-Myb" id="6Nf-wh-GRa"/>
+                        <outlet property="forward" destination="CdK-xf-FbU" id="37u-yU-tTA"/>
                         <outlet property="imageView" destination="8yo-bh-ASt" id="tn4-vu-pGt"/>
                     </connections>
                 </viewController>
@@ -385,8 +388,8 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="U9S-Fo-5em"/>
-        <segue reference="heZ-S4-oQW"/>
+        <segue reference="MKd-DD-7nb"/>
+        <segue reference="x79-Zh-QIg"/>
         <segue reference="DsF-gZ-FwP"/>
     </inferredMetricsTieBreakers>
 </document>

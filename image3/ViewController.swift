@@ -57,7 +57,7 @@ class ViewController: UIViewController {
                 let image = UIImage(named: "スクリーンショット 2019-01-29 20.56.50")
                 imageView.image = image
             }
-        
+    
         
 
 
@@ -66,17 +66,25 @@ class ViewController: UIViewController {
 
 
 
+    
 
+    @IBOutlet weak var forward: UIButton!
+    
+    @IBOutlet weak var back: UIButton!
     @IBAction func play1(_ sender: UIButton) {
         // タイマーを設定
         if self.timer == nil {
             timer = Timer.scheduledTimer(timeInterval: 2.0, target: self, selector: #selector(updateTimer(_:)), userInfo: nil, repeats: true)
+            forward.isEnabled = false
+            back.isEnabled = false
         }else{
             
             
             if self.timer != nil {
                 if self.timer != nil {
                     self.timer!.invalidate()   // タイマーを停止する
+                    forward.isEnabled = true
+                    back.isEnabled = true
                     self.timer = nil          // startTimer() の timer == nil で判断するために、 timer = nil としておく
                 }
             }
