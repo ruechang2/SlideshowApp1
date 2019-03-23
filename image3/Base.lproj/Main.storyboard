@@ -83,7 +83,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="61.600000000000001" y="137.18140929535232"/>
+            <point key="canvasLocation" x="-145" y="206"/>
         </scene>
         <!--View Controller2-->
         <scene sceneID="AMD-at-dfJ">
@@ -104,7 +104,7 @@
                                         </constraints>
                                         <state key="normal" title="進む"/>
                                         <connections>
-                                            <segue destination="KrR-ja-ejn" kind="show" id="xV4-OL-h7J"/>
+                                            <segue destination="KrR-ja-ejn" kind="show" id="xHN-dX-42h"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lj9-gE-9aj">
@@ -115,7 +115,7 @@
                                         </constraints>
                                         <state key="normal" title="戻る"/>
                                         <connections>
-                                            <segue destination="BYZ-38-t0r" kind="show" id="Rbk-9V-PhY"/>
+                                            <segue destination="BYZ-38-t0r" kind="show" id="SDe-vH-7lp"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="C2C-tg-orA">
@@ -170,7 +170,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8J6-OS-IVH" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-66" y="-544"/>
+            <point key="canvasLocation" x="-841" y="-440"/>
         </scene>
         <!--Click View Controller2-->
         <scene sceneID="Pwk-p1-ydZ">
@@ -278,20 +278,23 @@
                                         <rect key="frame" x="0.0" y="0.0" width="66" height="35"/>
                                         <state key="normal" title="進む"/>
                                         <connections>
-                                            <segue destination="BYZ-38-t0r" kind="show" id="kBX-FH-Wz6"/>
+                                            <segue destination="BYZ-38-t0r" kind="show" id="DsF-gZ-FwP"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4WE-vh-kJz">
                                         <rect key="frame" x="86" y="0.0" width="66" height="35"/>
                                         <state key="normal" title="戻る"/>
                                         <connections>
-                                            <segue destination="Ci8-8u-6yo" kind="show" id="laC-ov-tvC"/>
+                                            <segue destination="Ci8-8u-6yo" kind="show" id="heZ-S4-oQW"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Epw-1V-r9o">
                                         <rect key="frame" x="172" y="0.0" width="66" height="35"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                         <state key="normal" title="再生/停止"/>
+                                        <connections>
+                                            <action selector="play3:" destination="KrR-ja-ejn" eventType="touchUpInside" id="vHq-vg-NJw"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <constraints>
@@ -328,8 +331,7 @@
                         <viewLayoutGuide key="safeArea" id="JLa-im-qDY"/>
                     </view>
                     <connections>
-                        <outlet property="button3" destination="XT5-OI-EfP" id="EbZ-aD-V5U"/>
-                        <outlet property="imageView4" destination="5wc-vX-lES" id="PoZ-lP-qgK"/>
+                        <outlet property="imageView3" destination="5wc-vX-lES" id="RIb-tM-uzR"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ird-PL-vGQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -374,7 +376,7 @@
                         <viewLayoutGuide key="safeArea" id="UBv-i0-39u"/>
                     </view>
                     <connections>
-                        <outlet property="imageView5" destination="lbu-oK-Nlj" id="Idi-K5-7o7"/>
+                        <outlet property="imageView5" destination="lbu-oK-Nlj" id="F92-jL-5C7"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="b8t-0i-Xag" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -383,8 +385,8 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="xV4-OL-h7J"/>
-        <segue reference="x79-Zh-QIg"/>
-        <segue reference="Rbk-9V-PhY"/>
+        <segue reference="U9S-Fo-5em"/>
+        <segue reference="heZ-S4-oQW"/>
+        <segue reference="DsF-gZ-FwP"/>
     </inferredMetricsTieBreakers>
 </document>
