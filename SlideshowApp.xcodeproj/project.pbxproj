@@ -14,10 +14,6 @@
 		CE1123AF223FAE6100FBD68C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE1123AD223FAE6100FBD68C /* LaunchScreen.storyboard */; };
 		CE1123BA223FAE6200FBD68C /* image3Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE1123B9223FAE6200FBD68C /* image3Tests.swift */; };
 		CE1123C5223FAE6200FBD68C /* image3UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE1123C4223FAE6200FBD68C /* image3UITests.swift */; };
-		CE1123D5223FC0DF00FBD68C /* clickviewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE1123D4223FC0DF00FBD68C /* clickviewViewController.swift */; };
-		CE1123D9223FC87000FBD68C /* ViewController2.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE1123D8223FC87000FBD68C /* ViewController2.swift */; };
-		CE1123DB223FC93500FBD68C /* clickViewController2.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE1123DA223FC93500FBD68C /* clickViewController2.swift */; };
-		CE1123DD223FCEC800FBD68C /* ViewController3.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE1123DC223FCEC800FBD68C /* ViewController3.swift */; };
 		CE1123DF223FD0DA00FBD68C /* clickViewController3.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE1123DE223FD0DA00FBD68C /* clickViewController3.swift */; };
 		CE1123E12241686000FBD68C /* スクリーンショット 2019-01-29 20.56.50.png in Resources */ = {isa = PBXBuildFile; fileRef = CE1123E02241685F00FBD68C /* スクリーンショット 2019-01-29 20.56.50.png */; };
 		CE1123E32241686600FBD68C /* スクリーンショット 2019-01-29 20.57.15.png in Resources */ = {isa = PBXBuildFile; fileRef = CE1123E22241686600FBD68C /* スクリーンショット 2019-01-29 20.57.15.png */; };
@@ -55,10 +51,6 @@
 		CE1123C0223FAE6200FBD68C /* SlideshowAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SlideshowAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE1123C4223FAE6200FBD68C /* image3UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = image3UITests.swift; sourceTree = "<group>"; };
 		CE1123C6223FAE6200FBD68C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		CE1123D4223FC0DF00FBD68C /* clickviewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = clickviewViewController.swift; sourceTree = "<group>"; };
-		CE1123D8223FC87000FBD68C /* ViewController2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController2.swift; sourceTree = "<group>"; };
-		CE1123DA223FC93500FBD68C /* clickViewController2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = clickViewController2.swift; sourceTree = "<group>"; };
-		CE1123DC223FCEC800FBD68C /* ViewController3.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController3.swift; sourceTree = "<group>"; };
 		CE1123DE223FD0DA00FBD68C /* clickViewController3.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = clickViewController3.swift; sourceTree = "<group>"; };
 		CE1123E02241685F00FBD68C /* スクリーンショット 2019-01-29 20.56.50.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "スクリーンショット 2019-01-29 20.56.50.png"; sourceTree = "<group>"; };
 		CE1123E22241686600FBD68C /* スクリーンショット 2019-01-29 20.57.15.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "スクリーンショット 2019-01-29 20.57.15.png"; sourceTree = "<group>"; };
@@ -93,15 +85,8 @@
 		CE112398223FAE5500FBD68C = {
 			isa = PBXGroup;
 			children = (
-				CE1123E02241685F00FBD68C /* スクリーンショット 2019-01-29 20.56.50.png */,
-				CE1123E22241686600FBD68C /* スクリーンショット 2019-01-29 20.57.15.png */,
-				CE1123E42241687000FBD68C /* スクリーンショット 2019-01-29 21.01.51.png */,
 				CE1123DE223FD0DA00FBD68C /* clickViewController3.swift */,
-				CE1123DC223FCEC800FBD68C /* ViewController3.swift */,
-				CE1123DA223FC93500FBD68C /* clickViewController2.swift */,
-				CE1123D8223FC87000FBD68C /* ViewController2.swift */,
-				CE1123D4223FC0DF00FBD68C /* clickviewViewController.swift */,
-				CE1123A3223FAE5500FBD68C /* image3 */,
+				CE1123A3223FAE5500FBD68C /* SlideshowApp */,
 				CE1123B8223FAE6200FBD68C /* image3Tests */,
 				CE1123C3223FAE6200FBD68C /* image3UITests */,
 				CE1123A2223FAE5500FBD68C /* Products */,
@@ -118,9 +103,12 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		CE1123A3223FAE5500FBD68C /* image3 */ = {
+		CE1123A3223FAE5500FBD68C /* SlideshowApp */ = {
 			isa = PBXGroup;
 			children = (
+				CE1123E02241685F00FBD68C /* スクリーンショット 2019-01-29 20.56.50.png */,
+				CE1123E22241686600FBD68C /* スクリーンショット 2019-01-29 20.57.15.png */,
+				CE1123E42241687000FBD68C /* スクリーンショット 2019-01-29 21.01.51.png */,
 				CE1123A4223FAE5500FBD68C /* AppDelegate.swift */,
 				CE1123A6223FAE5500FBD68C /* ViewController.swift */,
 				CE1123A8223FAE5500FBD68C /* Main.storyboard */,
@@ -128,7 +116,7 @@
 				CE1123AD223FAE6100FBD68C /* LaunchScreen.storyboard */,
 				CE1123B0223FAE6200FBD68C /* Info.plist */,
 			);
-			path = image3;
+			path = SlideshowApp;
 			sourceTree = "<group>";
 		};
 		CE1123B8223FAE6200FBD68C /* image3Tests */ = {
@@ -284,11 +272,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CE1123A7223FAE5500FBD68C /* ViewController.swift in Sources */,
-				CE1123D9223FC87000FBD68C /* ViewController2.swift in Sources */,
-				CE1123DD223FCEC800FBD68C /* ViewController3.swift in Sources */,
-				CE1123DB223FC93500FBD68C /* clickViewController2.swift in Sources */,
 				CE1123DF223FD0DA00FBD68C /* clickViewController3.swift in Sources */,
-				CE1123D5223FC0DF00FBD68C /* clickviewViewController.swift in Sources */,
 				CE1123A5223FAE5500FBD68C /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

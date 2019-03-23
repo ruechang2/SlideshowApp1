@@ -10,12 +10,11 @@ import UIKit
 
 class ViewController: UIViewController {
     
-    let imageNameArray = [
-        "スクリーンショット 2019-01-29 20.56.50",
+    let imageNameArray = ["スクリーンショット 2019-01-29 20.56.50",
         "スクリーンショット 2019-01-29 20.57.15",
-        "スクリーンショット 2019-01-29 21.01.51",
-        
-        ]
+        "スクリーンショット 2019-01-29 21.01.51"]
+    
+    var dispImageNo = 0
     
     @IBOutlet weak var imageView: UIImageView!
   
@@ -23,7 +22,7 @@ class ViewController: UIViewController {
         var timer: Timer?
         
         /// 表示している画像の番号
-        var dispImageNo = 0
+    
         
         /// 表示している画像の番号を元に画像を表示する
         func displayImage() {
@@ -32,7 +31,7 @@ class ViewController: UIViewController {
             let imageNameArray = [
                 "スクリーンショット 2019-01-29 20.56.50",
                 "スクリーンショット 2019-01-29 20.57.15",
-                "スクリーンショット 2019-01-29 21.01.51",
+                "スクリーンショット 2019-01-29 21.01.51"
                 
                 ]
             
@@ -63,19 +62,33 @@ class ViewController: UIViewController {
                 
                 let image = UIImage(named: "スクリーンショット 2019-01-29 20.56.50")
                 imageView.image = image
-            
-    
-        
-
-
-
-    
-
-    
-
-        
-
     }
+    
+        
+    @IBAction func back(_ sender: Any) {
+        if dispImageNo == 0 {
+            dispImageNo = 2
+        } else {
+            dispImageNo -= 1
+        }
+        let name = imageNameArray[dispImageNo]
+        
+        // 画像を読み込み
+        let image = UIImage(named: name)
+        
+        // Image Viewに読み込んだ画像をセット
+        imageView.image = image
+    }
+    
+
+
+    
+
+    
+
+        
+
+    
 
     @IBAction func forward(_ sender: Any) {
         if dispImageNo == 2 {
@@ -99,6 +112,10 @@ class ViewController: UIViewController {
                 self.timer!.invalidate()   // タイマーを停止する
             }
         }
+        play1.setTitle("再生", for: .normal) // ボタンのタイトル
+        play1.setTitleColor(UIColor.red, for: .normal) // タイトルの色
+        forward.isEnabled = true
+        back.isEnabled = true
     }
     
 
@@ -147,4 +164,14 @@ class ViewController: UIViewController {
 @IBAction func unwind(_ segue: UIStoryboardSegue) {
     // 他の画面から segue を使って戻ってきた時に呼ばれる
 }
+    
+
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        
+        let clickViewController3:clickViewController3 = segue.destination as! clickViewController3
+ 
+        clickViewController3.imageNameArray = imageView.image
+
+    }
 }
