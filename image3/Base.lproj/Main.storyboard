@@ -42,12 +42,15 @@
                                         <rect key="frame" x="0.0" y="0.0" width="66" height="35"/>
                                         <state key="normal" title="進む"/>
                                         <connections>
-                                            <segue destination="Ci8-8u-6yo" kind="show" id="8MB-Ur-VZg"/>
+                                            <segue destination="Ci8-8u-6yo" kind="show" id="x79-Zh-QIg"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0ua-Tl-Myb">
                                         <rect key="frame" x="105" y="0.0" width="66" height="35"/>
                                         <state key="normal" title="戻る"/>
+                                        <connections>
+                                            <segue destination="KrR-ja-ejn" kind="show" id="MKd-DD-7nb"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wHj-p8-A9B">
                                         <rect key="frame" x="210" y="0.0" width="66" height="35"/>
@@ -123,6 +126,9 @@
                                         </constraints>
                                         <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                         <state key="normal" title="再生/停止"/>
+                                        <connections>
+                                            <action selector="play2:" destination="Ci8-8u-6yo" eventType="touchUpInside" id="nxg-XQ-KyZ"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <constraints>
@@ -143,7 +149,7 @@
                                     <constraint firstAttribute="width" constant="233" id="lUr-q2-HE6"/>
                                 </constraints>
                                 <connections>
-                                    <segue destination="2pr-Nl-fcS" kind="show" id="GzZ-VQ-yha"/>
+                                    <segue destination="2pr-Nl-fcS" kind="show" id="9zS-25-R5I"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -159,8 +165,7 @@
                         <viewLayoutGuide key="safeArea" id="TXv-BJ-Bfp"/>
                     </view>
                     <connections>
-                        <outlet property="button2" destination="deA-hL-HUh" id="W5v-7j-xOr"/>
-                        <outlet property="imageView2" destination="OaO-fc-eIn" id="HEy-Ks-LwL"/>
+                        <outlet property="imageView2" destination="OaO-fc-eIn" id="4qQ-OQ-EV0"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8J6-OS-IVH" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -175,7 +180,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="rPu-UW-za4">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" restorationIdentifier="imageView3" translatesAutoresizingMaskIntoConstraints="NO" id="rPu-UW-za4">
                                 <rect key="frame" x="0.0" y="184" width="375" height="218"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="218" id="g5Y-lG-shK"/>
@@ -205,7 +210,7 @@
                         <viewLayoutGuide key="safeArea" id="MyK-M4-j6f"/>
                     </view>
                     <connections>
-                        <outlet property="imageView3" destination="rPu-UW-za4" id="0bl-ai-MdJ"/>
+                        <outlet property="imageView3" destination="rPu-UW-za4" id="gUG-GV-0gp"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vgP-y8-Vxc" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -379,7 +384,7 @@
     </scenes>
     <inferredMetricsTieBreakers>
         <segue reference="xV4-OL-h7J"/>
-        <segue reference="8MB-Ur-VZg"/>
+        <segue reference="x79-Zh-QIg"/>
         <segue reference="Rbk-9V-PhY"/>
     </inferredMetricsTieBreakers>
 </document>

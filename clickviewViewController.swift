@@ -9,16 +9,27 @@
 import UIKit
 
 class clickviewViewController: UIViewController {
-
+var dispImageNo = 0
+    let imageNameArray = [
+        "スクリーンショット 2019-01-29 20.56.50",
+        "スクリーンショット 2019-01-29 20.57.15",
+        "スクリーンショット 2019-01-29 21.01.51",
+        
+        ]
     @IBOutlet weak var imageView2: UIImageView!
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        let image = UIImage(named: "スクリーンショット 2019-01-29 20.56.50.jpg")
+        // 表示している画像の番号から名前を取り出し
+        let name = imageNameArray[dispImageNo]
+        
+        // 画像を読み込み
+        let image = UIImage(named: name)
+        
+        // Image Viewに読み込んだ画像をセット
         imageView2.image = image
-        // Do any additional setup after loading the view.
     }
-    
+}
 
     /*
     // MARK: - Navigation
@@ -30,4 +41,3 @@ class clickviewViewController: UIViewController {
     }
     */
 
-}
